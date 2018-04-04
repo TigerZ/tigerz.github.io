@@ -122,8 +122,20 @@
 <!-- 嵌入范例 -->
 <script type="text/javascript" src="js/marked.js"></script>
 <script>
+    function openMdFromHash() {
+        var page = (function () {
+            var reg = new RegExp(/#(\w)+\.md/);
+            var r = location.href.match(reg);
+            if (r) return r[0].substr(1);
+            return null;
+        })();
+        if (page) openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/' + page, 'root');
+        else openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/readme.md', 'root');
+    }
+
     $(() => {
-        openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/readme.md', 'root');
+        openMdFromHash();
+        window.onhashchange = openMdFromHash;
         openmd('about.md', 'about');
         openmd('contact.md', 'contact');
     });
