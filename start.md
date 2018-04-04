@@ -59,7 +59,7 @@ API 参考文档需要自己生成。项目根目录里有个 mac 的执行文�
 
 1. 在浏览器中会显示运行效果：
 
-[barChart](html/barChart.html "tigerface-embed:barChart")
-[pieChart](html/pieChart.html "tigerface-embed:pieChart")
+[barChart](http://tigerz.github.io/html/barChart.html "tigerface-embed:barChart")
+[pieChart](http://tigerz.github.io/html/pieChart.html "tigerface-embed:pieChart")
 
 _说明：此范例是两个图表，点击"**刷新**"按钮_，更新演示数据，重绘图表

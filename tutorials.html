@@ -43,10 +43,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">首页</a>
+                        <a class="nav-link" href="index.html">首页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../start.html">入门</a>
+                        <a class="nav-link" href="start.html">入门</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">教程<span class="sr-only">(current)</span></a>
@@ -127,13 +127,13 @@
             var r = location.href.match(reg);
             if (r) return r[0].substr(1); return null;})();
         if(page) openmd(page, 'root');
-        else openmd('readme.md', 'root');
+        else openmd('tutorials.md', 'root');
     }
     window.onhashchange = openMdFromHash;
     $(() => {
         openMdFromHash();
-        openmd('../about.md', 'about');
-        openmd('../contact.md', 'contact');
+        openmd('about.md', 'about');
+        openmd('contact.md', 'contact');
     });
 </script>
 </body>
