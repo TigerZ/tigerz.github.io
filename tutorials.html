@@ -123,15 +123,19 @@
 <script type="text/javascript" src="../js/marked.js"></script>
 <script>
     function openMdFromHash() {
-        var page = (function(){var reg = new RegExp(/#(\w)+\.md/);
+        var page = (function () {
+            var reg = new RegExp(/#(\w)+\.md/);
             var r = location.href.match(reg);
-            if (r) return r[0].substr(1); return null;})();
-        if(page) openmd(page, 'root');
-        else openmd('tutorials.md', 'root');
+            if (r) return r[0].substr(1);
+            return null;
+        })();
+        if (page) openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/tutorials/' + page, 'root');
+        else openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/tutorials/readme.md', 'root');
     }
-    window.onhashchange = openMdFromHash;
+
     $(() => {
         openMdFromHash();
+        window.onhashchange = openMdFromHash;
         openmd('about.md', 'about');
         openmd('contact.md', 'contact');
     });
