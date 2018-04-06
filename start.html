@@ -27,7 +27,15 @@
             color: rgba(0, 0, 255, 0.8);
         }
 
-        body { overflow-y: scroll; }
+        body {
+            overflow-y: scroll;
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 1.75em;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -145,6 +153,7 @@
         if (r) return r[0].substr(1);
         return null;
     }
+
     var page = findPage();
 
     function markCurrent() {
@@ -155,7 +164,7 @@
     function openMdFromHash() {
         page = findPage();
         if (page) {
-            openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/start/' + page, 'root', markCurrent);
+            openmd('../start/' + page, 'root', markCurrent);
         }
     }
 
