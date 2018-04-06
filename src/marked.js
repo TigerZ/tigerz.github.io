@@ -26,7 +26,7 @@ myMarked.setOptions({
 });
 
 function openmd(url, id, callback) {
-    $(`#${id}`).html('正在装入数据，请稍等...');
+    $(`#${id}`).html('正在读取...');
     $.get(`${url}?_t=${+new Date()}`, (md) => {
         const result = myMarked(md, { renderer });
         $(`#${id}`).html(result);
