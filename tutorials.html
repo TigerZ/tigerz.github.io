@@ -152,14 +152,14 @@
     function openMdFromHash() {
         page = findPage();
         if (page) {
-            openmd('../tutorials/' + page, 'root', markCurrent);
+            openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/tutorials/' + page, 'root', markCurrent);
         }
     }
 
     $(() => {
         openmd('about.md', 'about');
         openmd('contact.md', 'contact');
-        openmd('../tutorials/readme.md', 'contents', markCurrent);
+        openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/tutorials/readme.md', 'contents', markCurrent);
         openMdFromHash();
         window.onhashchange = openMdFromHash;
     });
