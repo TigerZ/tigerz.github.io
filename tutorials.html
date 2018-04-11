@@ -167,6 +167,7 @@
     function openMdFromHash() {
         page = findPage();
         if (page) {
+            // openmd('../tutorials/' + page, 'root', markCurrent);
             openmd('https://raw.githubusercontent.com/TigerZ/tigerface.js/master/tutorials/' + page, 'root', markCurrent);
         }
     }
