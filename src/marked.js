@@ -11,7 +11,7 @@ renderer.link = function (href, title, text) {
     const prefix = 'tigerface-embed:';
     if (title && title.startsWith(prefix)) {
         const name = title.substr(prefix.length);
-        return `<div>${text}</div><div id="${name}" style="border:1px solid rgba(0,0,0,0.3);background-color:rgba(0,0,0,0.7);width:350px;height:200px"></div><script src="${href.replace(/html/g, 'js')}?_t=${+new Date()}"></script>`;
+        return `<div>${text}</div><div id="${name}" style="border:1px solid rgba(0,0,0,0.3);background-color:rgba(0,0,0,0.7);float:left"></div><div style="clear:both"></div><script src="${href.replace(/html/g, 'js')}?_t=${+new Date()}"></script>`;
     } else if (href && href.endsWith('md')) {
         return `<a title="${title}" href="#${href}">${text}</a>`;
     }
