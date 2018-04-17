@@ -8,6 +8,6 @@ tigerface.js 从 2014 年第一版到现在，代码风格变化很大。现在�
 我的资源库在 [GitHub](http://github.com/tigerz)，里面有 tigerface.js，tigerface-cli，还有这个网站。
 
 这个网站是 2018 年开始重构项目时新建的，页面只是简单引用了 Bootstrap，文档都是用 markdown 写的，
-我让 marked.js 支持嵌入 tigerface.js 动画，所以文档里的图文效果的除几张屏幕截图外，都是实时绘制的。
-工作量太大，所以代码还在重构，文档和范例还在不停的写，请你常来看看，每天都有变化。
+我让 marked.js 支持嵌入 tigerface.js 动画，所以文档里的插图除几张屏幕截图外，都是实时绘制的，比直接
+在 GitHub 上看文档，图文效果更好。代码还在重构，文档和范例还在不停的写，请你常来看看，每天都有变化。
 旧网站还在 [tigerfacejs.org](http://tigerfacejs.org)，里面有更多例子。
